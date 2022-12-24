@@ -463,12 +463,12 @@ local Donors = {
 
 local Tier = {
 	["1"] = {
-		Tag = "Donor of CMD-X",
+		Tag = "Donor of FunaSense",
 		Color = Color3.fromRGB(255,70,70),
 		SCHAT = "DONOR"
 	},
 	["2"] = {
-		Tag = "Donor of CMD-X",
+		Tag = "Donor of FunaSense",
 		Color = Color3.fromRGB(255,215,100),
 		SCHAT = "DONOR"
 	},
@@ -613,12 +613,12 @@ function updatesaves()
 		aliases = aliases;
 		clicktplimit = clicktplimit;
 	}
-	writefile("CMD-X.lua", game:GetService("HttpService"):JSONEncode(update))
+	writefile("FunaSense.lua", game:GetService("HttpService"):JSONEncode(update))
 end
 
 function loadsaves()
 	local success, errorsend = pcall(function()
-		saves = game:GetService("HttpService"):JSONDecode(readfile("CMD-X.lua"))
+		saves = game:GetService("HttpService"):JSONDecode(readfile("FunaSense.lua"))
 	end)
 	if not success then
 		loaddefaults()
@@ -1197,7 +1197,7 @@ output4.TextSize = 16
 output4.TextXAlignment = Enum.TextXAlignment.Left
 output4.TextWrapped = true
 output4.TextTruncate = Enum.TextTruncate.AtEnd
-local Hints = {"Did you know you can execute multiple commands with ';;'?","Did you know you can create a wait using timedcmd in loops?","You can find commands using 'cmds'.","You can change your prefix by doing 'prefixnew (key)'","Did you know CMD-X was created in October 2019?"}
+local Hints = {"Did you know you can execute multiple commands with ';;'?","Did you know you can create a wait using timedcmd in loops?","You can find commands using 'cmds'.","You can change your prefix by doing 'prefixnew (key)'","Did you know FunaSense was created in October 2022?"}
 output4.Text = Hints[math.random(1,#Hints)]
 
 output5.Name = "output5"
@@ -1951,16 +1951,16 @@ CMDS.commands = {
 	["prefixnew"] = "Changes chat prefix.",
 	["hotkeyopen"] = "Changes your hotkey for opening the GUI.",
 	["hotkeyfocus"] = "Changes your hotkey for focusing on the cmdbar.",
-	["entercmdnew"] = "Adds a new command which runs when you first execute CMD-X.",
+	["entercmdnew"] = "Adds a new command which runs when you first execute FunaSense.",
 	["entercmds"] = "Allows you to add entercmds.",
 	["entercmddel"] = "Deletes a command in the entercmds list.",
 	["entercmdsclr"] = "Clears the entercmds.",
 	["eightballpu"] = "Ask 8Ball a question publicly.",
 	["eightballpr"] = "Ask 8Ball a question privately.",
 	["friendjoin"] = "Joins your friends game.",
-	["support"] = "If you need support while using CMD-X use this command!",
+	["support"] = "If you need support while using FunaSense use this command!",
 	["commands"] = "Shows this page.",
-	["advertise"] = "Help spread CMD-X by doing this cmd in game! (<3)",
+	["advertise"] = "Help spread FunaSense by doing this cmd in game! (<3)",
 	["unadvertise"] = "()",
 	["version"] = "Shows version.",
 	["walkspeed"] = "Sets your characters walkspeed.",
@@ -2028,7 +2028,7 @@ CMDS.commands = {
 	["parts"] = "Lists parts.",
 	["bringunanchored"] = "Brings unachored parts (works best with .loop).",
 	["listunanchored"] = "Lists unanchored parts.",
-	["credits"] = "Lists credits for CMD-X.",
+	["credits"] = "Lists credits for FunaSense.",
 	["animation"] = "Plays the AnimationID you state in num1 and speeds it up in num2. (R6 ONLY)",
 	["unanimation"] = "Stops all animations.",
 	["uninsane"] = "()",
@@ -2209,7 +2209,7 @@ CMDS.commands = {
 	["hotkeyaimbot"] = "Changes your hotkey for activating aimbot.",
 	["hotkeyesp"] = "Changes your hotkey for activating ESP.",
 	["admindetect"] = "Detects admins in the game (If the game has HDAdmin do ;admins before running the command)(SUPPORTS: HD/KOHLS)",
-	["streamermode"] = "Hides all names in games (Suitable for streamers or people showcasing CMD-X <3).",
+	["streamermode"] = "Hides all names in games (Suitable for streamers or people showcasing FunaSense <3).",
 	["permflyspeed"] = "Fly speed is set to this every time you fly.",
 	["loopgoto"] = "Loop teleports to the player.",
 	["unloopgoto"] = "()",
@@ -2226,7 +2226,7 @@ CMDS.commands = {
 	["hotkeys"] = "Allows you to add hotkeys.",
 	["hotkeydel"] = "Deletes a hotkey in the hotkeys list.",
 	["hotkeysclr"] = "Clears the hotkeys.",
-	["changestyle"] = "Changes the style of your CMD-X refer to csinfo for more info on this command.",
+	["changestyle"] = "Changes the style of your FunaSense refer to csinfo for more info on this command.",
 	["csinfo"] = "Lists info about changestyle/cs.",
 	["chat"] = "Forces you to chat whatever you put in str (Bypasses any mute).",
 	["curvetools"] = "Curves your tools.",
@@ -2250,7 +2250,7 @@ CMDS.commands = {
 	["bring"] = "Brings the player to you (NEED A HAT AND TOOL).",
 	["kill"] = "Kills the player (NEED A HAT AND TOOL).",
 	["give"] = "Gives the player your tool.",
-	["using"] = "Specifies that you are using CMD-X. <3",
+	["using"] = "Specifies that you are using FunaSense. <3",
 	["playercases"] = "Lists player cases you can use in your second argument.",
 	["coronavirus"] = "Provides information about coronavirus using an API.",
 	["joindateprivate"] = "Shows players join date privately.",
@@ -2323,7 +2323,7 @@ CMDS.commands = {
 	["graphics"] = "Changes Master Graphics.",
 	["freecam"] = "Activates freecam.",
 	["unfreecam"] = "()",
-	["reload"] = "Reloads CMD-X.",
+	["reload"] = "Reloads FunaSense.",
 	["backpack"] = "Lists tools in players backpack.",
 	["partesp"] = "Shows all items that have the name or the class of what you enter.",
 	["unpartesp"] = "()",
@@ -2398,7 +2398,7 @@ CMDS.commands = {
 	["tabs"] = "Turns tabs on or off.",
 	["changetab"] = "Changes a tab from 1-9.",
 	["debugging"] = "Allows error showing on commands.",
-	["runafter"] = "Makes CMD-X automatically re-execute on rejoin.",
+	["runafter"] = "Makes FunaSense automatically re-execute on rejoin.",
 	["removeinchar"] = "Removes whatever you state from character.",
 	["unsitwalk"] = "()",
 	["setbackunanchored"] = "Sets back all unanchored parts to original positions.",
@@ -2463,7 +2463,7 @@ CMDS.commands = {
 	["rejoinrefresh"] = "Rejoins and places you back at the spot you were at.",
 	["backpackplay"] = "Loop plays plrs audio to stop muting.",
 	["unbackpackplay"] = "()",
-	["migratesaves"] = "Migrates save files/backups to CMD-X.lua.",
+	["migratesaves"] = "Migrates save files/backups to FunaSense.lua.",
 	["resetguipos"] = "Resets GUI position.",
 	["loopfling"] = "Loop flings player.",
 	["unloopfling"] = "()",
@@ -2496,7 +2496,7 @@ CMDS.commands = {
 	["nameesp"] = "Runs ESP with only names.",
 	["unnameesp"] = "()",
 	["spectatepart"] = "Views part.",
-	["rejoinexecute"] = "Rejoins and re-executes CMD-X once.",
+	["rejoinexecute"] = "Rejoins and re-executes FunaSense once.",
 	["multispam"] = "Spams strings seperated by commas.",
 	["logspam"] = "Spams any chat loggers without showing in chat.",
 	["unlogspam"] = "()",
@@ -2527,7 +2527,7 @@ CMDS.commands = {
 	["untransparentbubbles"] = "()",
 	["disableshiftlock"] = "()",
 	["robloxfromdiscordid"] = "Gets roblox account from discord id.",
-	["nilchatcmds"] = "Makes CMD-X chat commands not appear on chat.",
+	["nilchatcmds"] = "Makes FunaSense chat commands not appear on chat.",
 	["unnilchatcmds"] = "()",
 	["thirdperson"] = "Sets your camera to third person.",
 	["firstperson"] = "Sets your camera to first person.",
@@ -2535,7 +2535,7 @@ CMDS.commands = {
 	["unxraycamera"] = "()",
 	["retardchat"] = "Retards your chat on message posting.",
 	["unretardchat"] = "()",
-	["scriptusers"] = "Shows people currently using CMD-X.",
+	["scriptusers"] = "Shows people currently using FunaSense.",
 	["noshow"] = "Allows you to appear off .scriptusers.",
 	["reverse"] = "Allows you to reverse your HumanoidRootParts CFrame.",
 	["maxslopeangle"] = "Changes your MaxSlopeAngle.",
@@ -2566,7 +2566,7 @@ CMDS.commands = {
 	["drawingold"] = "Uses your exploits drawing api if it has one.",
 	["nomessages"] = "Stops messages from being sent (HD,Instances).",
 	["yesmessages"] = "()",
-	["removecmd"] = "Removes command from your CMD-X temporarily.",
+	["removecmd"] = "Removes command from your FunaSense temporarily.",
 	["spoofgrouprole"] = "Spoofs group role (only works on client scripts).",
 	["unspoofgrouprole"] = "()",
 	["nogameteleport"] = "Stops you from teleporting to other games (only works on client scripts).",
@@ -2597,7 +2597,7 @@ CMDS.commands = {
 	["antiwindowafk"] = "Stops the game from AFKing you when you unfocus your window.",
 	["unantiwindowafk"] = "()",
 	["clearcharacter"] = "Clears your character appearance.",
-	["discord"] = "Sets your clipboard to a CMD-X discord invite.",
+	["discord"] = "Sets your clipboard to a FunaSense discord invite.",
 	["alias"] = "Creates a custom alias for a command (can not replace commands)",
 	["delalias"] = "Removes a custom alias",
 	["aliases"] = "Lists custom aliases",
@@ -5370,7 +5370,7 @@ end
 
 function useCommand.using()
 	opx("-","Said script <3")
-	sayremote:FireServer("I am using CMD-X, Version: "..ver, "All")
+	sayremote:FireServer("I am using FunaSense, Version: "..ver, "All")
 end
 
 function useCommand.banlands()
@@ -7483,17 +7483,17 @@ end
 function useCommand.resetsaves()
 	Confirm("Default","This will reset your stats and saves.")
 	if Confirmation then
-		opx("-","Successfully reset your CMD-X.")
-		if isfile("CMD-X.lua") then
-			delfile("CMD-X.lua")
+		opx("-","Successfully reset your FunaSense.")
+		if isfile("FunaSense.lua") then
+			delfile("FunaSense.lua")
 		end
 	end
 end
 
 function useCommand.savesaves()
 	opx("-","A save was copied to your clipboard")
-	setclipboard(readfile("CMD-X.lua"))
-	writefile("CMD-X.save",readfile("CMD-X.lua"))
+	setclipboard(readfile("FunaSense.lua"))
+	writefile("FunaSense.save",readfile("FunaSense.lua"))
 end
 
 function useCommand.migratesaves()
@@ -7502,16 +7502,16 @@ function useCommand.migratesaves()
 		if arguments[2] then
 			if isfile(arguments[2]) then
 				opx("-","Migrated "..arguments[2].." to current saves")
-				writefile("CMD-X.lua",readfile(arguments[2]))
+				writefile("FunaSense.lua",readfile(arguments[2]))
 			else
 				opx("*","You do not have a save by that name.")
 			end
 		else
-			if isfile("CMD-X.save") then
-				opx("-","Migrated CMD-X.save to current saves")
-				writefile("CMD-X.lua",readfile("CMD-X.save"))
+			if isfile("FunaSense.save") then
+				opx("-","Migrated FunaSense.save to current saves")
+				writefile("FunaSense.lua",readfile("FunaSense.save"))
 			else
-				opx("*","You do not have a CMD-X save.")
+				opx("*","You do not have a FunaSense save.")
 			end
 		end
 	end
@@ -7528,8 +7528,8 @@ function useCommand.fuckoff()
 end
 
 function useCommand.reload()
-	opx("-","Reloading CMD-X...")
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+	opx("-","Reloading FunaSense...")
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/FunaSense/FunaSense/main/Source.lua", true))()
 end
 
 function useCommand.partesp()
@@ -7597,7 +7597,7 @@ end
 function useCommand.messagebox()
 	if messageboxasync then
 		opx("-","Opened message box, "..getstring(2))
-		messageboxasync(getstring(2), "CMD-X Message", 262148)
+		messageboxasync(getstring(2), "FunaSense Message", 262148)
 	else
 		opx("*","Your exploit does not support messageboxes!")
 	end
@@ -8403,14 +8403,14 @@ end
 
 function useCommand.runafter()
 	if arguments[2] == "on" then
-		opx("-","CMD-X will now run after rejoin")
+		opx("-","FunaSense will now run after rejoin")
 		KeepCMDXOn = true
 		if KeepCMDXOn and syn.queue_on_teleport then
-			syn.queue_on_teleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source"))()')
+			syn.queue_on_teleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/FunaSense/FunaSense/main/Source.lua"))()')
 		end
 		updatesaves()
 	elseif arguments[2] == "off" then
-		opx("-","CMD-X will no longer run after rejoin")
+		opx("-","FunaSense will no longer run after rejoin")
 		KeepCMDXOn = false
 		updatesaves()
 	else
@@ -9561,7 +9561,7 @@ function useCommand.audiologgersave()
 	local GetName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId)
 	local filename = GetName.Name.." audiolog"..math.random(1,10000)
 	audioIds = game:GetService("HttpService"):JSONEncode(audiologgerids)
-	writefile(filename..".CMD-X", audioIds)
+	writefile(filename..".FunaSense", audioIds)
 end
 
 function useCommand.antilag()
@@ -9711,59 +9711,6 @@ function useCommand.roast()
 	end
 end
 
-function useCommand.singinfo()
-	opx("-","Showed info for sing command")
-	opxL("Sing Info","Step 1: Get your song lyrics\
-	Step 2: Remove any blank lines\
-	Step 3: Find and remove any swear words\
-	Step 4: Put hashtags (#) at the end of each line\
-	Step 5: Compress the lines to avoid whitespace errors\
-	Step 6: Put your compressed text into a raw data uploading site such as pastebin or hastebin\
-	Step 7: Insert the link into the sing command\
-	To see a sample of what to do, visit: https://raw.githubusercontent.com/CMD-X/CMD-X/master/others/sing/")
-end
-
-stopSingMid = false
-function useCommand.sing()
-	local check = {
-		["genocide"] = true,
-		["animethighs"] = true,
-		["evilfantasy"] = true,
-		["$harkattack"] = true,
-		["introversion"] = true,
-		["lucy"] = true,
-		["tyler"] = true,
-		["methhead"] = true,
-		["superfuntime"] = true,
-		["haha"] = true,
-		["diamonds"] = true
-	}
-	if check[string.lower(arguments[2])] then
-		getSong = "https://raw.githubusercontent.com/CMD-X/CMD-X/master/others/sing/"..string.lower(arguments[2])
-	else
-		getSong = arguments[2]
-	end
-	local lyricsTable = game:HttpGet(getSong):split("#")
-	local songTitle = lyricsTable[1]
-	opx("-","Now singing "..songTitle)
-	sayremote:FireServer("Now singing "..songTitle, "All")
-	table.remove(lyricsTable,1)
-	stopSingMid = false
-	for i,v in pairs(lyricsTable) do
-		if stopSingMid == true then break end
-		wait(5)
-		if stopSingMid == true then break end
-		sayremote:FireServer(v, "All")
-	end
-	wait(5)
-	sayremote:FireServer("Finished singing "..songTitle, "All")
-end
-
-function useCommand.stopsing()
-	stopSingMid = true
-	opx("-","Stopped singing")
-end
-
 function useCommand.deletepos()
 	if arguments[2] then
 		wpNS = getstring(2)
@@ -9886,12 +9833,6 @@ function useCommand.loadcustomsclr()
 	loadCustoms = {}
 	updatesaves()
 	opx("-","Cleared loadcustoms")
-end
-
-function useCommand.antiwrldsgui()
-	opx("-","antiwrldsGUI loading")
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CMD-X/CMD-X/master/others/antiwrldsgui/main.lua'),true))()
-	opx("-","antiwrldsGUI loaded")
 end
 
 function useCommand.knife()
@@ -11322,7 +11263,7 @@ ManageTitleHotkey.BackgroundTransparency = 1.000
 ManageTitleHotkey.Position = UDim2.new(0.263266504, 0, 0.00765306223, 0)
 ManageTitleHotkey.Size = UDim2.new(0, 200, 0, 32)
 ManageTitleHotkey.Font = Enum.Font.GothamSemibold
-ManageTitleHotkey.Text = "CMD-X Hotkey MANAGER"
+ManageTitleHotkey.Text = "´FunaSense Hotkey MANAGER"
 ManageTitleHotkey.TextColor3 = Color3.fromRGB(255, 255, 255)
 ManageTitleHotkey.TextSize = 14.000
 
@@ -11867,7 +11808,7 @@ function useCommand.scriptusers()
 				end
 			end
 	   end
-		opx("-","Now showing users using CMD-X")
+		opx("-","Now showing users using FunaSense")
 		opxL("Using ["..xUsingCount.."]",xUsing)
 	else
 		opx("*","Turn noshow off to see other users")
@@ -12268,7 +12209,7 @@ function useCommand.playercases()
 	enemy - Chooses a player that is not on the same team as you\
 	near - Chooses a player that is close to you\
 	far - Chooses a player that is not close to you\
-	using - Chooses a player that is using CMD-X")
+	using - Chooses a player that is using FunaSense")
 end
 
 function useCommand.nomessages()
@@ -12552,7 +12493,7 @@ function useCommand.credits()
 	opxL("Credits","Note: Some discords may be out of date due to consistent changing;\
 	Owner - "..DevCords[1].." & "..DevCords[2].."\
 	Dev - "..DevCords[3].."\
-	Thank you to IY for some functions inside CMD-X\
+	Thank you to IY for some functions inside FunaSense\
 	Thank you to Bannable#5005 for animpack\
 	Thank you to 6033#6033 for old-aimbot")
 end
@@ -12775,7 +12716,7 @@ function useCommand.directjoin()
 	end
 end
 
-pcall(function() loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/others/depthoffield.lua",true))() end)
+pcall(function() loadstring(game:HttpGet("https://raw.githubusercontent.com/FunaSense/FunaSense/main/depthoffield.lua",true))() end)
 -- Thanks to MrAsyncRoblox on github, full credits.
 
 function useCommand.timedcmd()
@@ -13345,7 +13286,7 @@ end
 
 function useCommand.spotify()
 	opx("-","Spotify Premium is needed to run Spotify Presence")
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/projects/spotify.lua"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/FunaSense/FunaSense/main/spotify.lua"))()
 end
 
 function useCommand.friendjoin()
@@ -14445,7 +14386,7 @@ function useCommand.rejoinexecute()
 	syn.queue_on_teleport([[
 		game:GetService('ReplicatedFirst'):RemoveDefaultLoadingScreen()
 		repeat wait(.1) until game:GetService('Players').LocalPlayer
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/FunaSense/FunaSense/main/Source.lua", true))()
 	]])
 	opx("-","Rejoining game")
 	game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId, game.JobId, cmdp)
@@ -14961,7 +14902,7 @@ function useCommand.rejoinrefreshexecute()
 			end)
 			playeradded:Disconnect()
 		end)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/FunaSense/FunaSense/main/Source.lua", true))()
 	]], c.X, c.Y, c.Z))
 	opx("-","Rejoining game")
 	game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId, game.JobId, cmdp)
@@ -16186,7 +16127,7 @@ end)
 if not AntiCheat.PrintingOff then
 	local StarterGui = game:GetService("StarterGui")
 	StarterGui:SetCore("ChatMakeSystemMessage", {
-		Text = "Welcome to CMD-X, "..cmdlp.Name..".";
+		Text = "Welcome to FunaSense, "..cmdlp.Name..".";
 		Color = Color3.fromRGB(50, 50, 50);
 		Font = Enum.Font.SourceSansBold;TextSize = 25
 	})
@@ -16478,7 +16419,7 @@ end
 
 for _,v in pairs(cmdp:GetPlayers()) do
 	if Devs[v.UserId] then
-		opx("-",v.Name.." is in your server ("..Devs[v.UserId].." of CMD-X)")
+		opx("-",v.Name.." is in your server ("..Devs[v.UserId].." of FunaSense)")
 		RGBDev(v)
 	elseif Donors[v.UserId] then
 		opx("-",v.Name.." is in your server ("..Tier[Donors[v.UserId]].Tag..")")
@@ -16488,7 +16429,7 @@ end
 
 cmdp.PlayerAdded:Connect(function(v)
 	if Devs[v.UserId] then
-		opx("-",v.Name.." is in your server ("..Devs[v.UserId].." of CMD-X)")
+		opx("-",v.Name.." is in your server ("..Devs[v.UserId].." of FunaSense)")
 		RGBDev(v)
 	elseif Donors[v.UserId] then
 		opx("-",v.Name.." is in your server ("..Tier[Donors[v.UserId]].Tag..")")
