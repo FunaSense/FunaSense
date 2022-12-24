@@ -404,10 +404,10 @@ local Mouses = cmdlp:GetMouse()
 cmdm = Mouses
 -- we dont have this many owners just alts
 local Devs = {
-	[] = "Owner", -- Fini
-	[] = "Owner", -- Pigeon
-	[] = "Dev", -- Curvn
-	[] = "Dev", -- Curvns Alt
+	[1] = "Owner", -- Fini
+	[1] = "Owner", -- Pigeon
+	[11] = "Dev", -- Curvn
+	[11] = "Dev", -- Curvns Alt
 }
 
 DevCords = {
@@ -9834,6 +9834,13 @@ function useCommand.loadcustomsclr()
 	updatesaves()
 	opx("-","Cleared loadcustoms")
 end
+
+function useCommand.antiwrldsgui()
+	opx("-","antiwrldsGUI loading")
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/CMD-X/CMD-X/master/others/antiwrldsgui/main.lua'),true))()
+	opx("-","antiwrldsGUI loaded")
+end
+
 
 function useCommand.knife()
 	opx("-","If you had a knife in your mouth you are now holding it")
